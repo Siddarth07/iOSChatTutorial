@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>893294586028-4ikh5p6sasrv51624f65nj6j971bs4eb.apps.googleusercontent.com</string>
+	<string>113792527361-q4od3qe6rk3eb35l9eb0flmv8vaicr49.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.893294586028-4ikh5p6sasrv51624f65nj6j971bs4eb</string>
+	<string>com.googleusercontent.apps.113792527361-q4od3qe6rk3eb35l9eb0flmv8vaicr49</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAT0BadlyFa8Xm9_3F3696Pl1SHmul-o5A</string>
+	<string>AIzaSyAPWdC3l5LE930HdDiOkP-qy_kaAm5bhHY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>893294586028</string>
+	<string>113792527361</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>net.telliott.rwchitchat</string>
 	<key>PROJECT_ID</key>
-	<string>ioschat-d8e06</string>
+	<string>ioschattutorial</string>
 	<key>STORAGE_BUCKET</key>
-	<string>ioschat-d8e06.appspot.com</string>
+	<string>ioschattutorial.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:893294586028:ios:4e1e1dece3a6738c</string>
+	<string>1:113792527361:ios:4e1e1dece3a6738c</string>
 	<key>DATABASE_URL</key>
-	<string>https://ioschat-d8e06.firebaseio.com</string>
+	<string>https://ioschattutorial.firebaseio.com</string>
 </dict>
 </plist>

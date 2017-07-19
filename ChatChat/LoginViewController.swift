@@ -21,6 +21,8 @@
 */
 
 import UIKit
+import Firebase
+
 
 class LoginViewController: UIViewController {
   
@@ -42,6 +44,16 @@ class LoginViewController: UIViewController {
   }
   
   @IBAction func loginDidTouch(_ sender: AnyObject) {
+    if nameField?.text != "" { // 1
+        Auth.auth().signInAnonymously(completion: { (user, error) in // 2
+            if let err = error { // 3
+                print(err.localizedDescription)
+                return
+            }
+            
+            self.performSegue(withIdentifier: "LoginToChat", sender: nil) // 4
+        })
+    }
   }
   
   // MARK: - Notifications
@@ -55,6 +67,15 @@ class LoginViewController: UIViewController {
   func keyboardWillHideNotification(_ notification: Notification) {
     bottomLayoutGuideConstraint.constant = 48
   }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        let navVc = segue.destination as! UINavigationController // 1
+        let channelVc = navVc.viewControllers.first as! ChannelListViewController // 2
+        
+        channelVc.senderDisplayName = nameField?.text // 3
+    }
   
 }
 
